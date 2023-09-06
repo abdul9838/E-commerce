@@ -23,7 +23,7 @@ export default function Products() {
 
   return (
     <div className="flex flex-col justify-center bg-gray-100">
-      <div className="flex justify-between items-center sticky top-0 z-10 py-4 rounded-b-lg px-20 bg-opacity-70 backdrop-blur-md shadow-lg">
+      <div className="flex justify-between items-center sticky top-0 z-1 py-4 rounded-b-lg px-20 bg-opacity-70 backdrop-blur-md shadow-lg">
         <h1 className="text-2xl uppercase font-bold  text-center">E-Shop</h1>
         {!showModal && (
           <button
