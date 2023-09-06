@@ -23,13 +23,11 @@ export default function Products() {
 
   return (
     <div className="flex flex-col justify-center bg-gray-100">
-      <div className="flex justify-between items-center px-20">
-        <h1 className="text-2xl uppercase font-bold mt-10 text-center mb-10">
-          E-Shop
-        </h1>
+      <div className="flex justify-between items-center sticky top-0 z-10 py-4 rounded-b-lg px-20 bg-opacity-70 backdrop-blur-md shadow-lg">
+        <h1 className="text-2xl uppercase font-bold  text-center">E-Shop</h1>
         {!showModal && (
           <button
-            className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
+            className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
             onClick={toggle}
           >
             Cart ({cartItems.length})
@@ -53,7 +51,7 @@ export default function Products() {
             </div>
             <div className="mt-6 flex justify-between items-center">
               <button
-                className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
+                className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
                 onClick={() => {
                   addToCart(product);
                 }}
